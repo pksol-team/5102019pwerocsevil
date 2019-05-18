@@ -1548,3 +1548,283 @@ header.header {
 }
 
 /*  */
+.tabs-box-list li span {
+	float: left;
+}
+.top-box-list {
+    list-style: none;
+}
+ul.tabs-box-list.top-box-list li {
+    float: left;
+    width: 100%;
+	padding: 6px 0px;
+}
+
+ul.tabs-box-list.top-box-list {
+    float: left;
+    width: 100%;
+}
+span.mini {
+    float: right !important;
+}
+span.flag img {
+    width: 20px;
+}
+/* .tabs-box-list li {
+    padding: 8px 4px;
+} */
+span.tournament {
+    font-weight: bold;
+}
+span.star i {
+    color: #F7C46D;
+    font-size: 14px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+ul.sub-details {
+    width: 100%;
+    float: right;
+    background-color: #fff;
+	display: none;
+}
+span.mini a {
+    color: #656565;
+	margin-right: 8px;
+}
+span.checkbox-two {
+    width: 4%;
+	display: block;
+}
+span.win-detail {
+    width: 40%;
+    display: block;
+}
+span.points {
+    width: 8%;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+span.goals-detail {
+    width: 40%;
+    display: block;
+}
+span.player {
+    float: right !important;
+	display: block;
+}
+span.final-points {
+    float: right !important;
+    display: block;
+}
+/* .content-padding {
+    padding: 5px 0px;
+    border-bottom: 1px #e7e7e7 solid;
+} */
+.content-padding {
+	float: left;width: 100%;
+	padding: 7px 0 7px 0;
+	border-bottom: 1px #d4c6c6 solid; 
+	background: #E9E9E9;
+}
+
+ul.sub-details li {
+    padding: 4px 0;
+    border-bottom: 1px #d4c6c6 solid;
+}
+li.top-li input[type="checkbox"] {
+    margin-left: 5px;
+}
+span.flag {
+    margin-left: 8px;
+}
+span.tournament {
+    margin-left: 8px;
+}
+span.down-icon {
+    padding: 0 10px 0 10px;
+}
+ul.sub-details li:hover {
+    background-color: #00000012;
+	cursor: pointer;
+}
+.red-card {
+    background-color: red;
+    margin-right: 8px;
+    width: 8px;
+    height: 12px;
+}
+span.down-icon:hover {
+    cursor: pointer;
+}
+span.tournament a {
+    color: #656565;
+}
+ul.sub-details li a {
+    color: #656565;
+}
+first-text
+{
+	display: block;
+}
+li.top-li input[type="checkbox"] {
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+li.top-li.active-torn input[type="checkbox"] {
+    visibility: visible;
+    opacity: 1;
+}
+li.top-li.active-torn .first-text {
+    display: none;
+}
+
+li.top-li.active-torn .next-text {
+    display: block;
+}
+span.next-text {
+	display: none;
+}
+ul.drop-menu li {
+    padding-left: 13px;
+}
+.drop-menu i {
+    float: right;
+}
+.custom-breadcrumb
+{
+	background-color: transparent;
+	padding: 7px 0px;
+}
+.custom-breadcrumb ul li img {
+    width: 18px;
+    margin-right: 4px;
+}
+.custom-breadcrumb ul li {
+    display: inline-block;
+    font-size: 12px;
+}
+.custom-breadcrumb ul li a
+{
+	color: #656565;
+}
+.custom-breadcrumb ul {
+    float: left;
+}
+.content {
+    display: inline;
+	padding: 0px 10px;
+	color: #d6d1d1;
+}
+.pl-details {
+    display: block !important;
+}
+span.pl-team {
+    float: left;
+    display: block;
+    margin-left: 14px;
+}
+span.pl-sponser {
+    width: 47%;
+    display: block;
+    padding: 0px 14px;
+}
+.pl-points
+{
+	font-weight: bold;
+}
+li.ls-more span {
+    float: none;
+}
+span.pl-player {
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.custom-breadcrumb li:after {content: "\f054";font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #d6d1d1;padding: 0 12px;
+    font-size: 11px;}
+
+.custom-breadcrumb li:last-child:after {
+    display: none;
+}
+.my-tabs.multi-tabs {
+    margin-top: 25px;
+}
+.my-tabs {
+    float: left;
+    width: 100%;
+}
+.multi-tab-inner .nav-tabs {
+    background-color: #085f00;
+	padding-left: 12px;
+}
+.multi-tab-inner ul li a.nav-link.active {
+    background-color: #053600;
+}
+.multi-tab-inner ul li a.nav-link {
+    background-color: #085f00;
+    border-color: #085f00;
+    color: #fff;
+}
+.multi-tab-inner li.nav-item {
+    border: 0;
+}
+.tournament-name ul li {
+    display: inline-block;
+}
+.tournament-name img {
+    width: 70px;
+    border: 1px #e1d6d6 solid;
+    border-radius: 5px;
+    padding: 2px 2px;
+}
+.tournament-name p {
+    font-size: 14px;
+    color: #656565;
+    font-weight: bold;
+}
+.tournament-name ul {
+    padding: 10px 0px;
+}
+
+.show_more_countries {
+	text-align: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border: 1px solid #656565;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #656565 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

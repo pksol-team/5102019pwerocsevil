@@ -181,3 +181,31 @@ global $wp_version;return(object) array('last_checked'=> time(),'version_checked
 add_filter('pre_site_transient_update_core','remove_core_updates');
 add_filter('pre_site_transient_update_plugins','remove_core_updates');
 add_filter('pre_site_transient_update_themes','remove_core_updates');
+
+
+add_action( 'wp_ajax_nopriv_leagues_data', 'leagues_data' );
+add_action( 'wp_ajax_leagues_data', 'leagues_data' );
+
+function leagues_data() { 
+
+	
+	$leangueRequest = wp_remote_get($_POST['data']);
+	$leagues = json_decode($leangueRequest['body']);
+
+	if(count($leagues->data->league) > 0) {
+
+		echo '<ul class="drop-menu">';
+
+		foreach ($leagues->data->league as $key => $league_data) {
+			echo '<li> <a href="#" data-id="'.$league_data->id.' data-country_id="'.$league_data->country_id.'   "> '.$league_data->name.' <i class = "fa fa-star-o" aria-hidden = "true"> </i> </a> </li>';
+		}
+
+		echo '</ul>';
+
+	}
+
+	die();
+}
+
+
+

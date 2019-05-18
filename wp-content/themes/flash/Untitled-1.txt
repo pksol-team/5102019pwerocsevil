@@ -1,0 +1,24 @@
+<div class="side-box side-box-nc">
+	<h1>Giải đấu Của tôi</h1>
+	<ul class="top-list nation_list">
+
+		<?php
+			$countriesRequest = wp_remote_get('http://livescore-api.com/api-client/countries/list.json?key=9GKXlzHjoF6v3mlO&secret=ah65KoQi7lmDlWyvDisYS9igOoMSL8GV');
+
+			$nations = json_decode($countriesRequest['body']);
+
+		?>
+
+		<?php foreach ($nations->data->country as $key => $nation): ?>
+
+			<?php if ($nation->is_real == '1'): ?>
+				<li <?php
+					if($key > 15)
+					echo 'class="d-none"';
+					?>><a href="#"><?= $nation->name; ?></a></li>
+				<?php endif ?>
+			<?php endforeach; ?>
+		<li class="show_more_countries"> <a href="javascript:void();">Thêm</a></li>
+
+	</ul>
+</div>
