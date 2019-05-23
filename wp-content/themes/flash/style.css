@@ -1828,3 +1828,12 @@ span.pl-player {
     transform: rotate(360deg);
   }
 }
+
+ul.tabs-box-list.top-box-list.tournament-list li:first-child {
+	padding-top: 5px;
+}
+
+ul.tabs-box-list.top-box-list.tournament-list li {
+	padding: 0;
+}
+

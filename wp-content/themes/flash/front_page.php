@@ -60,6 +60,24 @@
 													<span class="down-icon"><i class="fa fa-chevron-down"></i></span>
 												</span>
 											</div>
+
+											<ul class="sub-details">
+												<li>
+													<a href="#">
+														<span class="checkbox-two"><input type="checkbox" value=""></span>
+														<span class="win-detail">
+															<span class="finish">Kết thúc</span>
+															<span class="player">Al Jaish (Syr)</span>
+														</span>
+														<span class="points">2 - 2</span>
+														<span class="goals-detail">
+															<span class="team">Nejmeh SC (Leb)</span>
+															<span class="final-points">(1 - 0)</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+
 										</li>
 									<?php endforeach;  ?>
 									

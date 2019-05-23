@@ -11,17 +11,28 @@ $(document).ready( () => {
 
 	});
 
-	$('.tournament-list li span.mini span.down-icon').click(function () {
+	$('.tournament-list li span.mini span.down-icon').click( e => {
 
-		jQuery(this).parent().parent().parent().toggleClass('active-torn');
-		jQuery('ul.sub-details').toggle();
+		let $this = $(e.currentTarget);
+		let li = $this.parent().parent().parent();
+		li.toggleClass('active-torn');
+		li.find('ul.sub-details').toggle();
+
+		let carret = $this.children('i');
+
+		let current_state = carret.hasClass('fa-chevron-down');
+
+		if (current_state) {
+			$this.children('i').attr('class', 'fa fa-chevron-up');
+		} else {
+			$this.children('i').attr('class', 'fa fa-chevron-down');
+		}
+
 	});
+	
+	$('.tournament-list li:nth-child(odd)').find('.down-icon').trigger('click');
 
-	$('.tournament-list > li span.checkbox input').click(function () {
-		jQuery('ul.sub-details input[type="checkbox"]').prop('checked', this.checked)
-	});
-
-	jQuery('ul.top-list li').click( e =>  {
+	$('ul.top-list li').click( e =>  {
 		
 		e.preventDefault();
 		let $this = $(e.currentTarget);
@@ -72,4 +83,7 @@ const css_loader = (el, action, $) => {
 	}
 
 }
+
+
+
 
