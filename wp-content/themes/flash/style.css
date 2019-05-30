@@ -1837,3 +1837,38 @@ ul.tabs-box-list.top-box-list.tournament-list li {
 	padding: 0;
 }
 
+.tab-content .loader {
+	
+	text-align: center;
+	width: 100px;
+	margin: 20px auto;
+	background: #fff;
+	box-shadow: 1px 1px 10px #00000052;
+	
+}
+
+
+.tab-content .loader .lds-ring {
+	width: 58px;
+	height: 62px;
+	margin-top: 5px;
+}
+
+.tab-content .loader .lds-ring div { 
+	width: 50px;
+	height: 49px;
+	border-width: 3px;
+}
+
+.tab-content .loader span {
+	padding-bottom: 10px;
+    display: block;
+}
+
+
+
+
+
+
+
+

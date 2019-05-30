@@ -66,10 +66,80 @@ $(document).ready( () => {
 
 		}
 		
-    });
+	});
+	
+
+
+	let today = new Date();
+	let dd = String(today.getDate()).padStart(2, '0');
+	let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	let yyyy = today.getFullYear();
+
+	let todays_date = yyyy+'-'+mm+'-'+dd;
+
+	get_soccer_home_data(todays_date, $);
 
 });
 
+
+
+const get_soccer_home_data = (date, $) => {
+
+	let loader_div = $('.tab-content .loader');
+
+	let ajaxurl = '/wp-admin/admin-ajax.php';
+
+	$.ajax({
+		
+		type: "POST",
+		url: ajaxurl,
+		data: { 'action': 'data_by_date', date: date }
+
+	}).done( response => {
+
+		
+		let data = JSON.parse(response);
+
+		let past_html = '';
+
+		if ( data.past_matches.match.length > 0 ) {
+
+
+			$.each(data.past_matches.match, (indexInArray, past_array) => { 
+
+				past_html += `
+					<ul class="sub-details">
+						<li>
+							<a href="#">
+								<span class="checkbox-two"><input type="checkbox" value=""></span>
+								<span class="win-detail">
+									<span class="finish">`+ past_array.home_name +`</span>
+								</span>
+								<span class="points">`+ past_array.ft_score +`</span>
+								<span class="goals-detail">
+									<span class="team">`+ past_array.away_name +`</span>
+									<span class="final-points">(`+ past_array.ht_score +`)</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				`;
+
+			});
+
+		}
+
+		
+		console.log();
+
+
+
+
+
+
+	} );
+	
+}	
 
 const css_loader = (el, action, $) => {
 
