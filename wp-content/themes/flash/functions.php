@@ -182,15 +182,11 @@ add_filter('pre_site_transient_update_core','remove_core_updates');
 add_filter('pre_site_transient_update_plugins','remove_core_updates');
 add_filter('pre_site_transient_update_themes','remove_core_updates');
 
-
-
-
 add_action( 'wp_ajax_nopriv_leagues_data', 'leagues_data' );
 add_action( 'wp_ajax_leagues_data', 'leagues_data' );
 
 function leagues_data() { 
 
-	
 	$leangueRequest = wp_remote_get($_POST['data']);
 	$leagues = json_decode($leangueRequest['body']);
 
@@ -208,7 +204,6 @@ function leagues_data() {
 
 	die();
 }
-
 
 add_action( 'wp_ajax_nopriv_data_by_date', 'data_by_date' );
 add_action( 'wp_ajax_data_by_date', 'data_by_date' );
@@ -240,11 +235,9 @@ function data_by_date() {
 
 	}
 
-	
-
 	if( $type == 'future' or $type == NULL ) { 
 
-		$upcomingTodayMatchesRequest = wp_remote_get('https://livescore-api.com/api-client/fixtures/matches.json?key=9GKXlzHjoF6v3mlO&secret=ah65KoQi7lmDlWyvDisYS9igOoMSL8GV');
+		$upcomingTodayMatchesRequest = wp_remote_get('https://livescore-api.com/api-client/fixtures/matches.json?key=9GKXlzHjoF6v3mlO&secret=ah65KoQi7lmDlWyvDisYS9igOoMSL8GV&date='.$date);
 		$upcomingTodayMatches = json_decode($upcomingTodayMatchesRequest['body']);
 
 		$upcomingTodayMatches = ($upcomingTodayMatches->data);
@@ -262,5 +255,18 @@ function data_by_date() {
 }
 
 
+add_action( 'wp_ajax_nopriv_match_events', 'match_events' );
+add_action( 'wp_ajax_match_events', 'match_events' );
 
+function match_events() {
 
+	$match_id = $_POST['id'];
+
+	$events_request = wp_remote_get('http://livescore-api.com/api-client/scores/events.json?key=9GKXlzHjoF6v3mlO&secret=ah65KoQi7lmDlWyvDisYS9igOoMSL8GV&id='.$match_id);
+	$event_data = json_decode($events_request['body']);
+
+	echo json_encode($event_data->data);
+
+	die();
+
+}

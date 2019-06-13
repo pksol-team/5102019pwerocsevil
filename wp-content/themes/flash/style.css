@@ -1597,11 +1597,11 @@ span.checkbox-two {
 	display: block;
 }
 span.win-detail {
-    width: 40%;
+    width: 32%;
     display: block;
 }
 span.points {
-    width: 8%;
+    width: 20%;
 	display: block;
 	text-align: center;
 	font-weight: bold;
@@ -1837,6 +1837,10 @@ ul.tabs-box-list.top-box-list.tournament-list li {
 	padding: 0;
 }
 
+ul.tabs-box-list.top-box-list.tournament-list li {
+    padding: 5px 0px;
+}
+
 .tab-content .loader {
 	
 	text-align: center;
@@ -1865,10 +1869,278 @@ ul.tabs-box-list.top-box-list.tournament-list li {
     display: block;
 }
 
+.disableda {
+	pointer-events: none;
+	cursor: default;
+}
 
 
 
 
 
 
+/*********************************** SHAKEEL CSS *******************************************/
 
+
+
+
+/*! CSS Used from: https://www.flashscore.vn/x/css/header_40_1407000000.css ; media=screen */
+@media screen{
+table{font-size:100%;}
+a{color:#656565;text-decoration:none;}
+a:hover{text-decoration:none;}
+.soccer .gTableSort-asc .arrow{border-color:transparent transparent  #085f00 transparent;}
+}
+/*! CSS Used from: https://www.flashscore.vn/x/css/dynamic_40_1407000000.css ; media=screen */
+@media screen{
+.stats-table .form a{background-image:url(https://www.flashscore.vn/res/image/standings/form.vi.png);}
+}
+/*! CSS Used from: https://www.flashscore.vn/x/css/user_40_1407000000.css ; media=screen */
+@media screen{
+span.team-logo{width:15px;height:15px;display:inline-block;vertical-align:middle;margin-right:8px;background-repeat:no-repeat;}
+}
+/*! CSS Used from: https://www.flashscore.vn/x/css/page_40_1407000000.css ; media=screen */
+@media screen{
+.preload{position:absolute;top:100px;left:50%;margin-left:-11ex;z-index:100;text-align:center;background:#ffffff;width:22ex;height:46px;line-height:46px;opacity:0.8;-moz-opacity:0.8;-khtml-opacity:0.8;filter:alpha(opacity=80);}
+.preload span{display:block;padding-left:40px;background:url(https://www.flashscore.vn/res/_fs/build/ajax-loader-hockey.54802cb.gif) no-repeat 15%;}
+.flat .preload{display:flex;flex-flow:column nowrap;width:140px;height:105px;box-shadow:0 0 30px 0 rgba(0, 0, 0, 0.15);opacity:1;z-index:9;}
+.flat .preload span{display:block;padding:52px 0 0 0;background:url(https://www.flashscore.vn/res/_fs/build/fs-loading.b9a2e05.gif) no-repeat!important;background-size:30%!important;background-position:50% 25px!important;font-size:11px;color:rgba(101, 101, 101, 0.5);}
+.soccer .preload span{background-image:url(https://www.flashscore.vn/res/_fs/build/ajax-loader-soccer.a81b1d3.gif);}
+a:hover{text-decoration:underline;}
+#detail #glib-stats-data table thead a{color:#FFFFFF;}
+#detail #glib-stats-data{position:relative;}
+#detail #glib-stats-data .preload{left:50%;top:100px;}
+#detail #glib-stats-data table tbody tr{border-right:1px solid #E0E0E0;}
+#detail .even{background-color:#F0F0F0;}
+#detail .odd{background-color:#FFFFFF;}
+#detail #glib-stats-data{position:relative;}
+#detail #glib-stats tbody tr td{line-height:16px;}
+#detail #glib-stats tbody tr td:first-child{border-left:1px solid #E0E0E0;}
+#detail thead tr.main th{height:19px;line-height:19px;}
+#detail thead tr.main{min-height:0;}
+span.team-logo-nologo{background:url(https://www.flashscore.vn/res/_fs/build/empty-logo-team-small.c8e5e89.png) no-repeat 0 0!important;}
+#detail #glib-stats-data table thead a{color:#FFFFFF;}
+#detail #glib-stats-data table tbody tr{border-right:1px solid #E0E0E0;}
+#detail .even{background-color:#F0F0F0;}
+#detail .odd{background-color:#FFFFFF;}
+table thead th .arrow{padding-left:10px;line-height:11px;line-height:9;margin-left:3px;vertical-align:top;display:inline;}
+table thead th a.gTableSort-on.gTableSort-asc span.arrow{background-image:url(https://www.flashscore.vn/res/_fs/build/sortable.0e0e2ca.png);background-repeat:no-repeat;}
+table thead th a.gTableSort-off .arrow{display:none;}
+table thead th.gTableSort-switch a{color:#fff;text-decoration:none;}
+table thead th.gTableSort-switch a:hover{text-decoration:underline;}
+table thead th.gTableSort-switch{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-o-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.flat #fsbody #detail .stats-table-container{border-bottom-color:#DEDFDE;overflow:auto;}
+.flat #fsbody #detail .stats-table-container .stats-main thead .main{background:none;color:#656565;font-size:11px;font-weight:bold;height:25px;line-height:25px;}
+.flat #fsbody #detail .stats-table-container .stats-main thead .main th{color:#B0B0B0;}
+.flat #fsbody #detail .stats-table-container .stats-main thead .main th.participant_name a{justify-content:flex-start;}
+.flat #fsbody #detail .stats-table-container .stats-main thead .main th a{color:#A7A7A7;display:flex;align-items:center;justify-content:center;}
+.flat #fsbody #detail .stats-table-container .stats-main thead .main th.participant_name a{justify-content:flex-start;}
+.flat #fsbody #detail .stats-table-container .stats-main tbody tr{height:24px;}
+.flat #fsbody #detail .stats-table-container .stats-main tbody tr td{border-left:none;border-right:none;border-top-color:#DEDFDE;background:none;}
+.flat #fsbody #detail .stats-table-container .stats-main tbody tr.even{background:#FFFFFF;}
+.flat #fsbody #detail .stats-table-container .stats-main tbody tr.even .col_sorted,.flat #fsbody #detail .stats-table-container .stats-main tbody tr.odd .col_sorted{background:#F3F3F3;}
+.flat .stats-table thead .gTableSort-off .arrow,.flat .stats-table thead .gTableSort-on .arrow{background-image:none;width:0;height:0;border-style:solid;display:inline-block;padding-left:0;vertical-align:initial;border-left-color:transparent;border-right-color:transparent;border-width:0;}
+.flat .stats-table thead .gTableSort-asc .arrow{border-width:0 4.5px 4.5px 4.5px;transform:translateY(-25%);}
+.stats-note-container{margin-top:5px;padding:0 10px;}
+.flat thead tr.main th{background:#e9e9e9;color:#656565;font-weight:bold;border-bottom:1px solid #e0e0e0;}
+.flat table thead th.gTableSort-switch a{color:#656565;}
+.flat table thead th .arrow{vertical-align:inherit!important;padding-top:3px!important;}
+.flat .stats-table tr td{line-height:24px;border-right:none;border-top:none;border-bottom:1px solid #E0E0E0;}
+.flat .stats-table-container{border-bottom:1px solid #e0e0e0;}
+.flat .stats-table-container th{font-weight:normal!important;color:#656565!important;}
+.flat .stats-table-container th a{height:22px;line-height:22px;color:inherit!important;}
+.flat .stats-note-container{margin-top:5px;padding:0 10px;}
+}
+/*! CSS Used from: https://www.flashscore.vn/x/css/table_40_1407000000.css ; media=screen */
+@media screen{
+.no{border-left:none;}
+.stats-table-container{border-bottom:1px solid #656565;}
+td.q1,td.r1{color:#fff;border-left:none;}
+td.q1{background-color:#004682;}
+td.r1{background-color:#BD0000;}
+.stats-table{width:100%;border-spacing:0;}
+.stats-table tr.main th{white-space:nowrap;padding-right:0;padding-left:0;}
+.stats-table tr th.col_name,.stats-table tr td.col_name{padding-right:8px;padding-left:8px;text-align:left;width:56%;min-width:56%;}
+.stats-table tr td{text-align:center;padding-left:5px;padding-right:5px;}
+.stats-table th{white-space:nowrap;}
+.stats-table td{border-top:1px solid #E0E0E0;border-right:1px solid #E0E0E0;padding: 5px 4px;}
+.stats-table tbody tr:last-child td{border-bottom:0 none;}
+.stats-table td.form{white-space:nowrap;}
+.stats-table th.col_name{padding-right:10px;}
+.stats-table th.col_name,.stats-table td.col_name{padding-left:10px;text-align:left;}
+.team_name_span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.team_name_span a{text-decoration:none;cursor:pointer;}
+.team_name_span a:hover{text-decoration:underline;}
+.col_name .team_name_span{vertical-align:middle;}
+.col_name .team_name_span a{color:#656565;}
+.col_name{white-space:nowrap;}
+thead tr.main th{font-size:11px;height:21px;line-height:21px;margin:0;background:url(https://www.flashscore.vn/res/_fs/build/bg-label.6e2a995.gif) repeat-x top #343434;color:#fff;font-weight:normal;}
+.stats-table td.form{padding-left:5px;padding-right:5px;}
+.stats-table tbody tr:last-child td{border-bottom:1px solid #E0E0E0;}
+.stats-table tbody:last-of-type tr:last-child td{border-bottom:none;}
+span.team-logo{width:15px;height:15px;display:inline-block;vertical-align:middle;margin-right:8px;}
+span.team-logo-nologo{background:url(https://www.flashscore.vn/res/_fs/build/empty-logo-team-small.c8e5e89.png) no-repeat 0 0!important;}
+#glib-stats .stats-table td.col_form div.no-upcoming-match.matches-5{width:97px;float:right;}
+#glib-stats .stats-table td.col_form div.matches-5{width:117px;}
+.stats-table .form a{text-decoration:none;background-color:transparent;background-repeat:no-repeat;}
+.form-bg{float:left;width:20px;height:17px;}
+.form-bg-last{float:left;width:17px;height:17px;}
+.stats-table .form a{text-decoration:none;cursor:pointer;}
+.stats-table .form a:hover{text-decoration:none;}
+a.form-w{background-position:0 -150px;}
+a:hover.form-w{background-position:0 -300px;}
+a.form-d{background-position:0 -200px;}
+a:hover.form-d{background-position:0 -350px;}
+a.form-l{background-position:0 -250px;}
+a:hover.form-l{background-position:0 -400px;}
+.glib-stats-data .preload{top:165px;}
+table .even .col_sorted{background:#e0e0e0;}
+table .odd .col_sorted{background:#efefef;}
+td.q1,td.r1{color:#fff!important;border-left:none!important;}
+td.q1{background-color:#004682!important;}
+td.r1{background-color:#BD0000!important;}
+}
+
+
+
+
+.page-template-finish-detail ul#menu-main-top-menu {
+    display: none;
+}
+.page-template-finish-detail footer#footer {
+    display: none;
+}
+.page-template-finish-detail {
+    background-color: #e9e9e9;
+    max-width: 660px;
+    margin: 0 auto;
+}
+.page-template-finish-detail .logo-or-menu {
+    padding: 2px 0;
+}
+.page-template-finish-detail .container {
+    margin: 0px!important;
+}
+.flag-img{
+	text-align: center;
+}
+.score h1
+{
+	color: #085f00;
+	font-size: 32px;
+	font-weight: bold;
+}
+.score p
+{
+	font-weight: bold;
+    color: #656565;
+    padding-top: 8px;
+}
+.score {
+    padding: 24px 0px;
+}
+.content-padding-details
+{
+	float: left;
+    width: 100%;
+    padding: 7px 8px;
+    border-bottom: 1px #d4c6c6 solid;
+    background: #E9E9E9;
+}
+.content-padding-details p
+{
+	font-weight: bold;
+    color: #656565;
+}
+.left-score
+{
+	float: left;
+}
+.right-score
+{
+	float: right;
+	padding-left: 12px;
+}
+.dash
+{
+	padding: 4px;
+	font-weight: bold;
+}
+.content-padding-score
+{
+	float: left;
+    width: 100%;
+    padding: 6px 8px;
+}
+.right-score li
+{
+	display: inline-flex;
+	padding-left: 4px;
+	vertical-align: middle;
+}
+.right-score li + a
+{
+	color: #656565;
+	font-weight: bold;
+}
+.right-card li span p
+{
+	color: #B0B0B0;
+}
+.yellow-card
+{
+	width: 16px;
+    height: 16px;
+	background-color: #f9c91e;
+}
+.left-score li
+{
+	display: inline-flex;
+	padding-right: 4px;
+	vertical-align: middle;
+}
+.left-score li a
+{
+	color: #656565;
+	font-weight: normal;
+}
+.left-score li i.fa.fa-arrow-up {
+    color: #3fbd40;
+}
+.left-score li i.fa.fa-arrow-down {
+    color: #d42e2f;
+}
+.right-score li i.fa.fa-arrow-up {
+    color: #3fbd40;
+}
+.right-score li i.fa.fa-arrow-down {
+    color: #d42e2f;
+}
+.page-template-finish-detail #wrapper > .container {
+	padding: 0;
+	max-width: 100%;
+}
+.last-content-padding
+{
+	float: left;
+    width: 100%;
+    padding: 6px 8px;
+	border-bottom: 1px #d4c6c6 solid;
+}
+.inner-footer
+{
+	float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.home-team.score,
+.away-team.score {
+	font-size: 34px;
+}
+
+.hidden-event, .heading_event {
+	display: none;
+}
+
+ 
